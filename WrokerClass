@@ -1,0 +1,70 @@
+
+public class Worker {
+	static int IDN = 0;
+	public Worker(){
+		this.ID=IDN++;
+		this.name = "";
+		this.position = "";
+		this.salaryPerHour = 0;
+		this.workedDays = 0;
+		this.salaryPerMonth = 0;
+		}
+	
+	public Worker(int iD, String name, String position,
+				double salaryPerHour, int workedDays, double salaryPerMonth) {
+			super();
+			ID = iD;
+			this.name = name;
+			this.position = position;
+			this.salaryPerHour = salaryPerHour;
+			this.workedDays = workedDays;
+			this.salaryPerMonth = salaryPerMonth;
+		}
+
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPosition() {
+		return position;
+	}
+	public void setPosition(String position) {
+		this.position = position;
+	}
+	public double getSalaryPerHour() {
+		return salaryPerHour;
+	}
+	public void setSalaryPerHour(double salaryPerHour) {
+		this.salaryPerHour = salaryPerHour;
+	}
+	public int getWorkedDays() {
+		return workedDays;
+	}
+	public void setWorkedDays(int workedDays) {
+		this.workedDays = workedDays;
+	}
+	public double getSalaryPerMonth() {
+		return salaryPerMonth;
+	}
+	public void setSalaryPerMonth(double salaryPerMonth) {
+		this.salaryPerMonth = salaryPerMonth;
+	}
+	public int getID() {
+		return ID;
+	}
+
+	public void setID(int iD) {
+		ID = iD;
+	}
+	
+	
+	private int ID;
+	private String name;
+	private String position;
+	private double salaryPerHour;
+	private int workedDays;
+	private double salaryPerMonth;
+	
+}
